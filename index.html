@@ -1,1 +1,149 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHINZO PLAYS | Free Fire Tournament</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background-color: #070b12; color: #f0f0f0; line-height: 1.6; min-height: 100vh; padding: 20px; background-image: radial-gradient(circle at 15% 50%, rgba(0, 255, 156, 0.03) 0%, transparent 20%), radial-gradient(circle at 85% 30%, rgba(0, 255, 156, 0.03) 0%, transparent 20%); }
+        .container { max-width: 1200px; margin: 0 auto; width: 100%; padding: 0 15px; }
+        .header { display: flex; flex-direction: column; align-items: center; text-align: center; margin: 20px 0 40px; padding-top: 20px; }
+        .logo-wrapper { width: 140px; height: 140px; border-radius: 50%; padding: 8px; margin-bottom: 25px; background: linear-gradient(145deg, rgba(0, 255, 156, 0.2), rgba(0, 255, 156, 0.05)); box-shadow: 0 0 30px rgba(0, 255, 156, 0.2); display: flex; align-items: center; justify-content: center; animation: logoFloat 4s ease-in-out infinite; }
+        .logo { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 3px solid rgba(0, 255, 156, 0.5); box-shadow: inset 0 0 15px rgba(0, 255, 156, 0.3), 0 0 25px rgba(0, 255, 156, 0.4); }
+        @keyframes logoFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .title { font-family: 'Orbitron', sans-serif; font-weight: 800; font-size: clamp(2.8rem, 8vw, 4.5rem); background: linear-gradient(to right, #ffffff, #00ff9c); -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 10px; letter-spacing: 1px; text-shadow: 0 0 15px rgba(0, 255, 156, 0.4); }
+        .subtitle { font-size: clamp(1.1rem, 3.5vw, 1.5rem); color: #a0aec0; margin-bottom: 30px; font-weight: 300; }
+        .intro { text-align: center; max-width: 800px; margin: 0 auto 60px; font-size: 1.1rem; color: #cbd5e0; padding: 0 15px; }
+        .highlight { color: #00ff9c; font-weight: 600; }
+        .section-title { font-family: 'Orbitron', sans-serif; font-size: clamp(1.8rem, 5vw, 2.5rem); text-align: center; margin-bottom: 40px; color: #fff; text-shadow: 0 0 10px rgba(0, 255, 156, 0.5); }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 60px; }
+        .feature-card { background: rgba(15, 23, 42, 0.7); border-radius: 20px; padding: 25px; text-align: center; border: 1.5px solid rgba(0, 255, 156, 0.2); transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); position: relative; overflow: hidden; }
+        .feature-card::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(0, 255, 156, 0.05), transparent); transition: left 0.6s ease; }
+        .feature-card:hover { border-color: #00ff9c; box-shadow: 0 0 25px rgba(0, 255, 156, 0.2); transform: translateY(-5px); }
+        .feature-card:hover::before { left: 100%; }
+        .feature-icon { font-size: 2.5rem; margin-bottom: 15px; color: #00ff9c; text-shadow: 0 0 10px rgba(0, 255, 156, 0.7); }
+        .feature-card h3 { font-size: 1.4rem; margin-bottom: 10px; color: #fff; }
+        .feature-card p { color: #a0aec0; font-size: 0.95rem; }
+        .steps-container { max-width: 700px; margin: 0 auto 60px; counter-reset: step-counter; }
+        .step { background: rgba(15, 23, 42, 0.7); border-radius: 18px; padding: 25px 25px 25px 80px; margin-bottom: 20px; border-left: 4px solid #00ff9c; position: relative; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
+        .step::before { counter-increment: step-counter; content: counter(step-counter); position: absolute; left: 20px; top: 50%; transform: translateY(-50%); width: 45px; height: 45px; background: linear-gradient(135deg, #00ff9c, #00b36e); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 1.3rem; color: #070b12; box-shadow: 0 0 15px rgba(0, 255, 156, 0.5); }
+        .step h3 { font-size: 1.3rem; margin-bottom: 8px; color: #fff; }
+        .step p { color: #cbd5e0; }
+        .download-section { text-align: center; margin: 60px 0; }
+        .download-btn { display: inline-block; background: linear-gradient(135deg, #00ff9c, #00b36e); color: #070b12; font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: clamp(1.5rem, 4vw, 1.9rem); padding: 22px 50px; border-radius: 60px; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 0 30px rgba(0, 255, 156, 0.6); border: none; cursor: pointer; transition: all 0.3s ease; animation: pulseGlow 2s infinite; margin-bottom: 25px; }
+        @keyframes pulseGlow { 0%, 100% { box-shadow: 0 0 30px rgba(0, 255, 156, 0.6); } 50% { box-shadow: 0 0 45px rgba(0, 255, 156, 0.9); } }
+        .download-btn:hover { transform: scale(1.05); box-shadow: 0 0 50px rgba(0, 255, 156, 1); }
+        .version { color: #718096; font-size: 0.95rem; text-align: center; }
+        .footer { text-align: center; padding: 30px 0 20px; color: #718096; font-size: 0.9rem; border-top: 1px solid rgba(255, 255, 255, 0.05); margin-top: 30px; }
+        @media (max-width: 768px) {
+            body { padding: 15px 10px; }
+            .logo-wrapper { width: 120px; height: 120px; }
+            .feature-card { padding: 20px; }
+            .step { padding: 20px 20px 20px 70px; }
+            .step::before { width: 40px; height: 40px; left: 15px; font-size: 1.1rem; }
+            .download-btn { padding: 20px 40px; width: 90%; max-width: 350px; }
+        }
+        @media (max-width: 480px) {
+            .title { font-size: 2.5rem; }
+            .subtitle { font-size: 1.2rem; }
+            .features-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-wrapper">
+                <img src="logo.png" alt="SHINZO PLAYS Logo" class="logo">
+            </div>
+            <h1 class="title">SHINZO PLAYS</h1>
+            <p class="subtitle">Free Fire Tournament Platform</p>
+        </header>
+        <section class="intro">
+            <p>Join custom <span class="highlight">Free Fire</span> matches, compete with <span class="highlight">real players</span>, and receive instant <span class="highlight">room ID & password</span>. Win real rewards using our secure wallet system. Built for the <span class="highlight">Indian esports</span> community.</p>
+        </section>
+        <section class="features">
+            <h2 class="section-title">Premium Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Solo / Duo / Squad</h3>
+                    <p>Tournaments for every play style. Join alone or with your crew.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instant Match Joining</h3>
+                    <p>Get into a tournament within seconds. No waiting, just action.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Secure Wallet System</h3>
+                    <p>Your winnings are safe and can be withdrawn anytime.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Real Players Only</h3>
+                    <p>No bots. Compete against genuine players for real competition.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔑</div>
+                    <h3>Fast Room ID & Password</h3>
+                    <p>Immediate delivery after registration. No delays.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Live Support</h3>
+                    <p>24/7 assistance for any issues during your matches.</p>
+                </div>
+            </div>
+        </section>
+        <section class="install">
+            <h2 class="section-title">How To Install</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <h3>Tap Download Button</h3>
+                    <p>Click the big DOWNLOAD APK button below.</p>
+                </div>
+                <div class="step">
+                    <h3>Allow Download Permission</h3>
+                    <p>Grant permission to download the APK file when prompted.</p>
+                </div>
+                <div class="step">
+                    <h3>Open Downloaded APK</h3>
+                    <p>Locate the downloaded file in your device's file manager.</p>
+                </div>
+                <div class="step">
+                    <h3>Enable Install Unknown Apps</h3>
+                    <p>Allow installation from unknown sources in your settings (if required).</p>
+                </div>
+                <div class="step">
+                    <h3>Install and Open SHINZO PLAYS</h3>
+                    <p>Complete installation and launch the app to start playing.</p>
+                </div>
+            </div>
+        </section>
+        <section class="download-section">
+            <a href="SHINZOPLAYS.apk" download class="download-btn">DOWNLOAD APK</a>
+            <p class="version">Version: Latest | Not available on Play Store yet</p>
+        </section>
+        <footer class="footer">
+            <p>© 2023 SHINZO PLAYS. All rights reserved. For Free Fire esports enthusiasts.</p>
+        </footer>
+    </div>
+    <script>
+        document.querySelector('.download-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            const link = document.createElement('a');
+            link.href = 'SHINZOPLAYS.apk';
+            link.download = 'SHINZOPLAYS.apk';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
+</body>
+</html>
