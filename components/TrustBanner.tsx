@@ -2,9 +2,9 @@
 
 export function TrustBanner() {
   const trustItems = [
-    { icon: '🔒', text: 'Secure Payments' },
+    { icon: '🔒', text: 'Wallet Credit System' },
     { icon: '👥', text: 'Real Players' },
-    { icon: '⚡', text: 'Instant Withdrawals' },
+    { icon: '⏱️', text: 'Manual Withdrawals' },
     { icon: '📅', text: 'Daily Matches' },
   ]
 
@@ -27,10 +27,10 @@ export function TrustBanner() {
 
         <div className="text-center">
           <p className="text-2xl md:text-3xl font-gaming font-bold text-brand-gold">
-            1000+ Matches Completed
+            Growing Community
           </p>
           <p className="text-text-muted text-sm md:text-base mt-2">
-            Join thousands of players enjoying real tournaments with real rewards
+            Join a growing community of Free Fire players competing in custom rooms
           </p>
         </div>
       </div>

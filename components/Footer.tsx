@@ -87,9 +87,7 @@ export function Footer() {
           {/* Disclaimer */}
           <div className="bg-dark-bg/50 border border-brand-gold/20 rounded-lg p-4 text-center">
             <p className="text-xs md:text-sm text-text-muted leading-relaxed">
-              <span className="font-semibold text-brand-gold">Disclaimer:</span> Shinzo Plays is a
-              skill-based competitive gaming platform and not gambling. Players compete based on
-              gaming skill and strategy. All transactions are secure and verified.
+              <span className="font-semibold text-brand-gold">Disclaimer:</span> Shinzo Plays hosts skill-based custom room competitions. We do not promote gambling or betting. Entry fees are used to organize matches and rewards.
             </p>
           </div>
 

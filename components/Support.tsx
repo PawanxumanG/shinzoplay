@@ -44,21 +44,16 @@ export function Support() {
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-3 gap-4 text-left bg-dark-card/50 border border-brand-gold/20 rounded-lg p-6">
+        <div className="grid sm:grid-cols-2 gap-4 text-left bg-dark-card/50 border border-brand-gold/20 rounded-lg p-6">
+          <div className="text-center">
+            <p className="text-2xl mb-2">💬</p>
+            <p className="text-xs text-text-muted">WhatsApp Support</p>
+            <p className="text-sm font-semibold text-brand-gold">24/7 Available</p>
+          </div>
           <div className="text-center">
             <p className="text-2xl mb-2">📧</p>
             <p className="text-xs text-text-muted">Email Support</p>
             <p className="text-sm font-semibold text-text-light">support@shinzoplays.com</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl mb-2">🎮</p>
-            <p className="text-xs text-text-muted">Discord Community</p>
-            <p className="text-sm font-semibold text-brand-gold">Join Server</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl mb-2">📱</p>
-            <p className="text-xs text-text-muted">Follow Us</p>
-            <p className="text-sm font-semibold text-text-light">@shinzoplays</p>
           </div>
         </div>
       </div>

@@ -45,13 +45,12 @@ export function HeroSection() {
 
         {/* Tagline */}
         <p className="text-xl md:text-2xl font-semibold text-brand-gold mb-4">
-          Play Matches. Win Cash. Instant Withdrawals.
+          Custom Room Tournaments for Free Fire MAX Players
         </p>
 
         {/* Description */}
         <p className="text-base md:text-lg text-text-muted mb-8 leading-relaxed max-w-2xl mx-auto">
-          Daily Solo & Squad tournaments. Join custom rooms and earn real rewards.
-          Free Fire MAX custom room tournament platform with secure payments.
+          Join daily custom room matches, compete with real players, and win wallet rewards.
         </p>
 
         {/* CTA Buttons */}
@@ -73,7 +72,7 @@ export function HeroSection() {
         {/* Trust Badge */}
         <div className="bg-dark-card/50 border border-brand-gold/20 rounded-lg p-4 md:p-6 inline-block backdrop-blur">
           <p className="text-sm md:text-base text-text-light">
-            ✓ <span className="text-brand-gold font-semibold">1000+ Matches Completed</span>
+            ✓ <span className="text-brand-gold font-semibold">Secure & Fair Tournaments</span>
           </p>
         </div>
       </div>

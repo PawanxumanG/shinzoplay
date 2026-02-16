@@ -8,27 +8,27 @@ export function FAQ() {
   const faqs = [
     {
       q: 'Is Shinzo Plays safe?',
-      a: 'Yes, Shinzo Plays uses bank-level encryption and secure payment gateways. All transactions are protected and your personal data is never shared.',
+      a: 'Yes. The app only requires basic internet access. It does not access your photos, contacts, or personal files.',
     },
     {
-      q: 'How do I join a match?',
-      a: 'Install the app, add wallet balance, browse available tournaments, select your preferred match, and join instantly. You\'ll receive the room ID and password immediately.',
+      q: 'How do I get Room ID and password?',
+      a: 'Room ID and password appear inside the app before match time. You can copy them directly and use them in Free Fire.',
     },
     {
-      q: 'How do I get the Room ID and password?',
-      a: 'After joining a tournament, the Room ID and password are automatically provided in the app. You can copy them directly and use them in Free Fire.',
+      q: 'How are winners decided?',
+      a: 'Winners are verified using match result screenshots uploaded by the admin.',
     },
     {
-      q: 'How do I withdraw my money?',
-      a: 'Go to your wallet, click "Withdraw", choose your preferred payment method (UPI, bank transfer, etc.), enter the amount (minimum ₹50), and confirm. Money reaches your account within 5-10 minutes.',
+      q: 'Why APK and not Play Store?',
+      a: 'Currently the app is distributed via APK while development and testing continue.',
     },
     {
-      q: 'Why is it APK and not on Play Store?',
-      a: 'We\'re working on Play Store approval. Currently, we offer APK for faster updates and better features. The APK is 100% safe and verified.',
+      q: 'How long do withdrawals take?',
+      a: 'After match completion and admin verification, withdrawals are processed manually. Usually within a few hours.',
     },
     {
-      q: 'What if I find a hacker in my match?',
-      a: 'Report the player immediately in-app with proof. We investigate all reports within 24 hours and provide instant refunds if suspicious activity is confirmed.',
+      q: 'What if I have issues with a match?',
+      a: 'Contact support immediately via WhatsApp. Our team investigates all issues and provides refunds if needed.',
     },
   ]
 

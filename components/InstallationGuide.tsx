@@ -40,12 +40,10 @@ export function InstallationGuide() {
             <span className="text-2xl flex-shrink-0">🔐</span>
             <div>
               <p className="font-gaming font-bold text-brand-gold mb-2 text-base md:text-lg">
-                APK Safety Notice
+                APK Installation Notice
               </p>
               <p className="text-text-muted text-sm md:text-base leading-relaxed">
-                Shinzo Plays APK is safe and secure. We do not access your personal
-                files, photos, or sensitive data. The APK is signed and verified for
-                your protection.
+                Because the app is not on Play Store, Android will ask permission once during installation. This is normal for APK apps.
               </p>
             </div>
           </div>

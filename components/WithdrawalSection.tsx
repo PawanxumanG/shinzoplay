@@ -8,11 +8,11 @@ export function WithdrawalSection() {
           <div className="text-center">
             <div className="text-6xl mb-6">💸</div>
             <h2 className="font-gaming text-3xl md:text-4xl font-bold text-brand-gold mb-4">
-              Instant Withdrawals via UPI
+              Wallet Withdrawals
             </h2>
             <p className="text-text-light text-base md:text-lg leading-relaxed mb-8">
-              Withdraw your winnings directly to your bank account, UPI ID, or mobile
-              wallet within minutes. No hidden charges. No waiting periods.
+              After match completion, winners are verified and rewards are credited to in-app wallet.
+              You can request withdrawal using UPI from the wallet section.
             </p>
 
             <div className="bg-dark-card/50 border border-brand-gold/20 rounded-lg p-6 inline-block mb-8">
@@ -21,12 +21,19 @@ export function WithdrawalSection() {
             </div>
 
             <div className="space-y-3 text-left bg-dark-card/30 border border-brand-gold/20 rounded-lg p-6 md:p-8">
-              <h3 className="font-bold text-brand-gold text-lg mb-4">Withdrawal Methods:</h3>
-              <div className="space-y-2 text-text-light text-sm md:text-base">
-                <p>✓ UPI (Google Pay, PhonePe, Paytm)</p>
-                <p>✓ Bank Transfer (Direct NEFT/RTGS)</p>
-                <p>✓ Mobile Wallets (Paytm, PhonePe)</p>
-                <p>✓ Net Banking</p>
+              <h3 className="font-bold text-brand-gold text-lg mb-4">Withdrawal Details:</h3>
+              <div className="space-y-3 text-text-light text-sm md:text-base">
+                <div>
+                  <p className="font-semibold text-text-light">Minimum Withdrawal: ₹50</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-text-light">Processing Time: Usually within a few hours</p>
+                  <p className="text-text-muted text-xs mt-1">After admin verification of match results</p>
+                </div>
+                <div className="pt-3 border-t border-brand-gold/20">
+                  <p>✓ UPI (Google Pay, PhonePe, Paytm)</p>
+                  <p className="text-text-muted text-xs">Bank details verified from your account</p>
+                </div>
               </div>
             </div>
           </div>

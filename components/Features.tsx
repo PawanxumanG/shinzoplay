@@ -14,23 +14,23 @@ export function Features() {
     },
     {
       icon: '🔑',
-      title: 'Live Room ID & Password',
+      title: 'Room ID & Password',
       description: 'Get instant access to custom rooms with unique credentials.',
     },
     {
       icon: '📸',
-      title: 'Result Screenshots',
-      description: 'Automatic proof capture for fair and transparent results.',
+      title: 'Result Screenshot Verification',
+      description: 'Match results are verified using uploaded result screenshots.',
     },
     {
       icon: '💳',
-      title: 'Wallet System',
-      description: 'Secure payment system for deposits and withdrawals.',
+      title: 'Wallet Balance System',
+      description: 'Manage deposits and wallet balance for matches.',
     },
     {
-      icon: '🎁',
-      title: 'Referral Rewards',
-      description: 'Earn bonuses by inviting friends to join tournaments.',
+      icon: '💬',
+      title: 'Support Chat',
+      description: 'Get help from support team 24/7 via WhatsApp.',
     },
   ]
 
